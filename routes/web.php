@@ -23,3 +23,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('hello-world','HelloWorldController@index');
 Route::get('audi','audiController@index');
+
+Route::get('players', 'PlayerController@index');
