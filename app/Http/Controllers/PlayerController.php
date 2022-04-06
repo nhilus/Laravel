@@ -15,7 +15,7 @@ class PlayerController extends Controller
     public function index()
     {
         $players= Player::all();
-        dd($players);
+        return view('pages.players.index', ['players'=>$players]);
     }
 
     /**

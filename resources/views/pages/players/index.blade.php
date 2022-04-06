@@ -2,6 +2,7 @@
 
 @section('content')
 
+   @component('components.tables.table')
 
 
 @endsection
