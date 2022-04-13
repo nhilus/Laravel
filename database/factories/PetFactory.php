@@ -8,9 +8,9 @@ use Faker\Generator as Faker;
 $factory->define(Pet::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
-        'color' => $faker->colour,
+        'color' => $faker->colorName,
         'date_of_birth'=> now(),
         'person_id'=> $faker -> numerify('###'),
-        'remember_token' => Str::random(10),
+        'remember_token' => rand(10),
     ];
 });

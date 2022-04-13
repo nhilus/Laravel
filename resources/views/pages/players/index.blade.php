@@ -2,7 +2,8 @@
 
 @section('content')
 
-   @component('components.tables.table')
+   @component('components.tables.table', ['players'=>$players])
+   @endcomponent
 
 
 @endsection

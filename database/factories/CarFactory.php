@@ -2,13 +2,13 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Player;
+use App\Car;
 use Faker\Generator as Faker;
 
-$factory->define(Player::class, function (Faker $faker) {
+$factory->define(Car::class, function (Faker $faker) {
     return [
         'name' => $faker-> name,
-        'birth_date' => $faker->date(),
-        'address_id'=> rand(1,50)
+        'color'=>$faker->colorName,
+        'player_id'=> rand(1,10)
     ];
 });

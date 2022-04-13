@@ -15,10 +15,12 @@ class DatabaseSeeder extends Seeder
         //$this->call(PostsTableSeeder::class);
         /*
         $this->call(CountrySeeder::class);
-        $this->call(AddressSeeder::class);
         $this->call(PersonSeeder::class);
         $this->call(PetSeeder::class);
         */
+        $this->call(CountrySeeder::class);
+        $this->call(AddressSeeder::class);
         $this->call(PlayerSeeder::class);
+        $this->call(CarSeeder::class);
     }
 }

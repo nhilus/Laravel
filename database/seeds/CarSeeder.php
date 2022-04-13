@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class PlayerSeeder extends Seeder
+class CarSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class PlayerSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Player::class,10)->create();
+        factory(\App\Car::class,20)->create();
     }
 }
